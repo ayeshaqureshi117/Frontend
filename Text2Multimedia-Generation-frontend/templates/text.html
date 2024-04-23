@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+
+    <title>Text to Video</title>
+    <link rel="icon" href="static/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body class="contactbody">
+    <nav>
+        <img src="static/images/logo.png" class="logo" alt="Logo" title="MediaSynthX">
+        <ul class="navbar">
+            <li>
+                <a href="./home">Home</a>
+                <a href="./home#text">Convert</a>
+                <a href="./home#package">Members</a>
+                <a href="./about">About Us</a>
+                <a id="loginLogoutLink" href="./login">{{ login_status }}</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Text To <span> Video </span></h1>
+            <p>Easily Convert Your Text Prompts into Video with us!</p>
+            <form id="textForm" action="/text" method="post">
+                <input type="text" name="prompt" placeholder="Enter Text" required>
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
+    </section>
+
+    <div class="loading">
+        <img src="static/images/loading.gif" alt="Loading">
+    </div>
+
+<!-- Video container initially hidden -->
+<div class="video-container" style="display: none;"> <!-- Initially hidden -->
+    <video id="output-video" type="video/mp4" autoplay controls></video>
+    <button onclick="togglePause()"></button> <!-- Button for toggling pause -->
+    <a id="download-link" href="" download><button></button></a> <!-- Button for downloading video -->
+</div>
+
+<script src="static/js/text.js"></script>
+
+    <!-- Footer -->
+    <section class="footer-rest">
+        <div class="foot">
+            <div class="footer-content">
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./register">Register</a></li>
+                        <li><a href="./about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://github.com/eysha-raazia/Text2Multimedia-Generation" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family:'Poppins',sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(#070d35, white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 75px;
+    margin: 2vh;
+}
+nav .logotext{
+    width: 130px;
+    margin: 0.5vh;
+    position: absolute;
+    left: 90%; /* Position it at the end of the logo */
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #b8d6f8a6;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 30px;
+    color: #070d35;
+}
+
+h1 span{
+    color: #ff1579;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background-color: #d7acac;
+    font-size: 13px;
+    font-weight: 1000px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+button{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    /* background-color:rgb(164, 44, 44); */
+    background-color: #ff1579;
+    border: 2px solid #070d35;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease 0.30s;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 2px solid #070d35;
+    background-color: #070d35;
+    transform: scale(1.1);
+}
+
+.error-msg {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-msg {
+    color: green;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+
+.footer-rest{
+    margin-top: 1px;
+    baposition: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #070d35;
+    color: white; /* Adjust text color as needed */
+    padding: 6px 0; /* Adjust padding as needed */
+    text-align: center; /* Center align text */
+    z-index: 100;
+}
+
+.foot{
+    padding: 1px 0;
+}
+
+.footer-content{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*justify-content: space-around;*/
+    
+}
+/* quick link */
+
+.footlinks h4{
+    list-style: none;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 7px;
+}
+
+
+.footlinks h4::before{
+    list-style: none;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    left: 0;
+    bottom: -5px;
+    background: white;
+}
+
+.footlinks ul li{
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.footlinks ul li a{
+    list-style: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    list-style: none;
+    transform: translate(6px);
+    color: #42545f;
+}
+
+.social a{
+    font-size: 25px;
+    margin: 2px;
+    height: 35px;
+    width: 35px;
+    color: black;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+    list-style: none;
+}
+
+.social a:hover{
+    list-style: none;
+    transform: scale(1.2);
+}
+
+.end{
+    list-style: none;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* copy right details */
+.end p{
+    list-style: none;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+

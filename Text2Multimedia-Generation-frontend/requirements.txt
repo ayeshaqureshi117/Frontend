@@ -1,0 +1,9 @@
+diffusers
+pyngrok
+pymongo
+torch
+moviepy
+tensorflow
+pyngrok
+tensorflow
+TTS
